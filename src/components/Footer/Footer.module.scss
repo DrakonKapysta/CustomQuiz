@@ -1,0 +1,7 @@
+@import "src/assets/styles/variables";
+.footer{
+  height: $pcFooterSize;
+  width: $pcMediumMaxWidth;
+  margin: 0 auto;
+  border: 2px solid #2a6ae5;
+}

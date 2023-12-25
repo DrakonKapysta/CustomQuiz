@@ -1,0 +1,28 @@
+@import "src/assets/styles/variables";
+
+.wrapper{
+  max-width: $pcMediumMaxWidth;
+  margin: 0 auto;
+  min-height: calc(100% - $pcHeaderSize - $pcFooterSize);
+}
+.content{
+  &__quiz{
+    display: flex;
+    justify-content: center;
+    img{
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+  .info{
+    display: flex;
+    justify-content: center;
+    &__about{
+      font-family: "Comic Sans MS", serif;
+
+      line-height: 1.50rem;
+      max-width: 850px;
+    }
+  }
+
+}

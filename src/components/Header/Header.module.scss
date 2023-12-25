@@ -1,3 +1,5 @@
+@import "src/assets/styles/variables";
+
 %header-container-selfSize {
     height: 100%;
     display: flex;
@@ -8,12 +10,13 @@
     font-family: "Source Code", Arial, serif;
     position: relative;
     font-weight: 600;
-    max-width: 1200px;
+    max-width: $pcMediumMaxWidth;
     margin: 0 auto;
     padding: 5px 16px;
     display: flex;
     align-items: center;
-    height: 4rem;
+    height: $pcHeaderSize;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.5);
     &__logo{
         @extend %header-container-selfSize;
     }
@@ -103,6 +106,10 @@
         img{
             width: 25px;
             height: 25px;
+        }
+        &:hover{
+            background-color: rgba(0,0,100,0.2);
+            cursor: pointer;
         }
     }
 }
